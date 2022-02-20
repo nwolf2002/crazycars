@@ -1,0 +1,49 @@
+@import "_variables";
+
+
+body{
+    background-color: $fondo;
+}
+
+header{
+    div{
+        background-color: $fondo !important;
+    }
+}
+
+H1{
+    text-justify: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    
+}
+
+.row{
+    background-color:$fondo !important;
+    div{
+        border: solid 2px $colornegro;
+        H1{
+            text-decoration: underline;
+        }
+    }
+}
+
+#img {
+    width: 550px;
+    height: 550px;
+    transition: all 2s;
+    &:hover{
+        width: 650px;
+        height: 650px;
+    }
+}
+
+footer{
+    justify-content: center;
+    background-color: $fondo;
+    
+}
+ion-icon {
+    font-size: 50px;
+
+  }
