@@ -12,22 +12,71 @@
 
 <body>
   
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
-    <div class="container-fluid">
-       <a href="../index.html"><button class="btn btn-outline-success" type="button">home</button></a> 
-       <a href="../web/autos.html"><button class="btn btn-outline-success" type="button">autos</button></a> 
-       <a href="../web/motos.html"><button class="btn btn-outline-success" type="button">motos</button></a>
-       <a href="../web/quienessomos.html"><button class="btn btn-outline-success" type="button">quienes somos</button></a>
-       <a href="../web/contacto.html"><button class="btn btn-outline-success" type="button">contacto</button></a>
-    </div>
+  <div>
+    <ul id="menu1">
+        <li class="nav-item">
+          <a href="../index.html"><button class="btn btn-outline-success" type="button">home</button></a>
+        </li>
+        <li class="nav-item">
+          <a href="../web/motos.html"><button class="btn btn-outline-success" type="button">motos</button></a>
+        </li>
+        <li class="nav-item">
+          <a href="../web/autos.html"><button class="btn btn-outline-success" type="button">autos</button></a>
+        </li>
+        <li class="nav-item">
+          <a href="../web/quienessomos.html"><button class="btn btn-outline-success" type="button">quienes somos</button></a>
+        </li>
+        <li class="nav-item">
+          <a href="../web/contacto.html"><button class="btn btn-outline-success" type="button">contacto</button></a>
+       </li>
+       </ul>
+  
+  
+</div>
+
+<nav class="navbar navbar-dark bg-dark fixed-top" id="menu2">
+<div class="container-fluid">
+<a class="navbar-brand" href="../index.html">Crazy Cars</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Crazy Cars</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 bg-dark pe-3">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../index.html">autos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../web/motos.html">motos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../web/autos.html">autos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../web/quienessomos.html">quienes somos</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../web/contacto.html">contactenos</a>
+      </li>
+      
+  
+  
+  </div>
+</div>
+</div>
 </nav>
     
 
     
     <header>
-          
-         <h1>suv</h1>
-     
+      <div class="container-fluid p-5">    
+         <h1 class="deepshadow">suv</h1>
+     </div>
 
     </header>
         
