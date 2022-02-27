@@ -1,6 +1,13 @@
 $tipografiaprincipal:normal;
 $colornegro: black;
-$fondo:black
-
-
+$fondo:black;
+$mapaColores: (1: red, 2: orange, 3: yellow, 4: green, 5: blue, 6: #333, 7: silver);
+$mapaTexto: (color: silver, centro:center );
+.caja{
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+}
 

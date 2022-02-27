@@ -1,21 +1,20 @@
 @import "_variables";
 
-
-body{
-    background-color: $fondo;
+body {
+  
+    background-image : url('../multimedia/fondo1.jpg');
+    font-size: 100%;
+    
 }
 
-header{
-    div{
-        background-color: $fondo !important;
-    }
+header div {
+  background-image : url('../multimedia/fondo1.jpg');
 }
-
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: $colornegro;
   
     
 }
@@ -23,14 +22,41 @@ ul{
 li{
     display: inline;
 }
-H1{
+h1 {
     display: flex;
-    text-justify:center;
-    text-decoration: underline;
-    text-transform: capitalize;
+    text-justify: center;
     justify-content: center;
-    justify-items: center;    
-}
+    justify-items: center;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 92px;
+    padding: 80px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+     .deepshadow {
+      color: #e0dfdc;
+      background-color: #333;
+      letter-spacing: .1em;
+      text-shadow: 
+        0 -1px 0 #fff, 
+        0 1px 0 #2e2e2e, 
+        0 2px 0 #2c2c2c, 
+        0 3px 0 #2a2a2a, 
+        0 4px 0 #282828, 
+        0 5px 0 #262626, 
+        0 6px 0 #242424, 
+        0 7px 0 #222, 
+        0 8px 0 #202020, 
+        0 9px 0 #1e1e1e, 
+        0 10px 0 #1c1c1c, 
+        0 11px 0 #1a1a1a, 
+        0 12px 0 #181818, 
+        0 13px 0 #161616, 
+        0 14px 0 #141414, 
+        0 15px 0 #121212, 
+        0 22px 30px rgba(0, 0, 0, 0.9);
+    }
 
 .row{
     background-color:$fondo !important;
@@ -61,6 +87,64 @@ ion-icon {
     font-size: 50px;
 
   }
-  
+  @media screen and (min-width: 320px){
+    #menu1{
+      display: none;
+    }
+    h1{
+      font-size: 25px;
+    }
+    }
+    
+    @media screen and (min-width: 720px){
+    #menu2{
+      display: none;
+    }
+    h1{
+      font-size: 92px;
+    }
+    }
+    
+    @media screen and (min-width: 1200px){
+      #menu1{
+        display: flex;
+        
+      }
+    }
+   
 
-  
+
+@mixin texto {
+    font-weight: bold;
+    color:red
+    
+}
+@mixin titulos {
+    text-decoration: underline;
+    color:red;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#cuadrotexto{
+    @extend .caja;
+    @include texto; 
+    background-color: map-get($map:$mapaColores 
+    , $key:6)
+}
+
+
+
+h2{
+    @extend .caja;
+    @include titulos;
+    font-weight: bold;
+    background-color: #121212;
+}
+
+h3{
+    @extend .caja;
+    @include titulos;
+    background-color:#242424;
+}
